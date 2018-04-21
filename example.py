@@ -1,0 +1,10 @@
+from Tkinter import *
+root = Tk()
+background_image=PhotoImage(file="peacock_feathers_bird_flying_animation_clipart.gif")
+background_label = Label(root, image=background_image)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
+root.wm_geometry("600x400+20+40")
+root.title('Menu')
+playButton = Button(root, text='Play', command=root.destroy)
+playButton.pack()
+root.mainloop()
